@@ -34,6 +34,16 @@ header {
 .heading .navegation-item span {
   color: greenyellow;
 }
+@media (max-width: 500px) {
+  .navegation-bars {
+    width: 180px;
+    position: absolute;
+    left: -7em;
+    top: 3em;
+    border: 1px solid greenyellow;
+  }
+}
+
 @media (max-width: 760px) {
   header {
     padding: 2em; 
@@ -68,13 +78,7 @@ header {
   .icon-bars:hover {
     color: greenyellow;
   }
-  .navegation-bars {
-    width: 200px;
-    position: absolute;
-    left: -8.5em;
-    top: 3em;
-    border: 1px solid greenyellow;
-  }
+ 
   .navegation-bars .navegation-item {
     padding: 1em;
   }

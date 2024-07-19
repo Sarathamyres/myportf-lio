@@ -1,26 +1,28 @@
 main {
-  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .home {
-  /*display*/
+.home{
+  display: none;
+}
+main .home-container {
+  display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
-main .home .text{
+main .home-container .text{
   padding: 0 2em;
 }
-main .home .name {
+main .home-container .name {
   font-size: 3.5em;
 }
-main .home .introduction {
+main .home-container .introduction {
   max-width: 65ch;
   margin-top: 1em;
 }
-main .home .languages {
+main .home-container .languages {
   display: flex;
   gap: 2em;
   margin-top: 1em;
@@ -38,7 +40,7 @@ main li {
   color: orange;
 }
 @media (max-width: 500px) {
-  main .home .name {
+  main .home-container .name {
   font-size: 2em;
 }
 }

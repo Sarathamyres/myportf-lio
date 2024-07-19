@@ -1,21 +1,58 @@
-
-.my-informations{
-  display: none;
+.my-informations-container {
+  display: flex;
 }
-.about-me{
+.about-me {
   margin-left: 3em;
   padding: 3em;
 }
-.about-me .profile{
+.about-me .profile {
   border: 1px solid greenyellow;
   margin-bottom: 2em;
 }
-.about-me span{
+.about-me span {
   color: orange;
 }
-.about-me p{
+.about-me p {
   max-width: 80ch;
 }
-.about-me p:not(:last-child){
+.about-me p:not(:last-child) {
   margin-bottom: 2em;
+}
+@media (max-width: 600px) {
+  .my-informations-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  .about-me .profile {
+    max-width: 50%;
+    border: 1px solid greenyellow;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 601px) and (max-width: 1220px) {
+  .about-me {
+    margin-left: 1em;
+    padding: 3em 1.7em;
+  }
+  .my-informations-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  .about-me .profile {
+    max-width: 240px;
+    border: 1px solid greenyellow;
+    margin-bottom: 2em;
+  }
+  .about-me {
+    display: flex;
+    align-items: center ;
+    gap: 1em;
+  }
+  .about-me .text {
+    display: flex;
+    flex-direction: column;
+    max-width: 60ch;
+  }
 }
