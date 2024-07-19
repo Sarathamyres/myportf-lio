@@ -1,0 +1,21 @@
+
+.my-informations{
+  display: none;
+}
+.about-me{
+  margin-left: 3em;
+  padding: 3em;
+}
+.about-me .profile{
+  border: 1px solid greenyellow;
+  margin-bottom: 2em;
+}
+.about-me span{
+  color: orange;
+}
+.about-me p{
+  max-width: 80ch;
+}
+.about-me p:not(:last-child){
+  margin-bottom: 2em;
+}

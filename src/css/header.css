@@ -1,0 +1,81 @@
+header {
+  padding: 2em 5em;
+  height: 15%;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading .menu-bars{
+  display: none;
+}
+.heading .logo {
+  font-size: 3em;
+  color: orange;
+  border: 1px solid greenyellow;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.heading .logo:hover {
+  color: greenyellow;
+}
+.heading .navegation {
+  display: flex;
+  gap: 2em;
+  font-size: 2em;
+}
+.heading .navegation-item {
+  color: orange;
+}
+.heading .navegation-item:hover {
+  color: greenyellow;
+}
+.heading .navegation-item span {
+  color: greenyellow;
+}
+@media (max-width: 760px) {
+  header {
+    padding: 2em; 
+  }
+  .heading .logo {
+    font-size: 2em;
+    margin-left: 1em;
+    color: orange;
+  }
+  .heading .navegation {
+    display: none;
+  }
+  header input:checked ~ .navegation-bars {
+    display: block;
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-color: transparent; 
+}
+  .heading .menu-bars {
+    position: relative;
+    display: block;
+  }
+  .icon-bars {
+    font-size: 3em;
+    color: orange;
+    cursor: pointer;
+  }
+  .icon-bars:hover {
+    color: greenyellow;
+  }
+  .navegation-bars {
+    width: 200px;
+    position: absolute;
+    left: -8.5em;
+    top: 3em;
+    border: 1px solid greenyellow;
+  }
+  .navegation-bars .navegation-item {
+    padding: 1em;
+  }
+}

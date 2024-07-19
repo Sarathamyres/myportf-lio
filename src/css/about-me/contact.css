@@ -1,0 +1,72 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 3em;
+  margin-right: 3em;
+}
+.contacts h3{
+  color: orange;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+.contacts h3 span{
+  color: greenyellow;
+}
+.contacts-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacts p{
+   max-width: 70ch;
+}
+.contacts span{
+  color: orange;
+}
+.contacts .text-one, .text-two, .text-three{
+  margin-bottom: 2em;
+}
+.information-area{
+  margin-bottom: 1em;
+}
+.information-area-list{
+  display: flex;
+  gap: 1em;
+}
+.information-area-list .list-item{
+  margin-bottom: 1em;
+}
+.information-area-list .list-item i{
+  font-size: 1.5em;
+  padding: 10px;
+  border: 1px solid greenyellow;
+  cursor: pointer;
+}
+.information-area-list .list-item i:hover{
+  color: greenyellow;
+}
+.address{
+  margin-top: 2em;
+}
+.address a{
+  display: flex;
+  gap: 1em;
+}
+.address i{
+  color: orange;
+}
+.address:hover i{
+  color: greenyellow;
+}
+.address p:hover ~ i {
+  color: greenyellow;
+}
+.address a {
+  display: flex;
+  gap: 1em;
+}
+.line{
+  border: 1px solid orange;
+}

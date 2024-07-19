@@ -1,0 +1,44 @@
+main {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .home {
+  /*display*/
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+main .home .text{
+  padding: 0 2em;
+}
+main .home .name {
+  font-size: 3.5em;
+}
+main .home .introduction {
+  max-width: 65ch;
+  margin-top: 1em;
+}
+main .home .languages {
+  display: flex;
+  gap: 2em;
+  margin-top: 1em;
+}
+main img {
+  max-width: 20%;
+}
+h2 {
+  color: orange;
+}
+p {
+  color: greenyellow;
+}
+main li {
+  color: orange;
+}
+@media (max-width: 500px) {
+  main .home .name {
+  font-size: 2em;
+}
+}
