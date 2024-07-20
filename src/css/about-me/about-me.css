@@ -1,29 +1,68 @@
-.my-informations-container {
-  display: flex;
-}
 .about-me {
-  margin-left: 3em;
-  padding: 3em;
+  display: flex;
+  height: 100%;
+}
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+.about-me .div-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-me .profile {
   border: 1px solid greenyellow;
-  margin-bottom: 2em;
+  max-width: 50%;
 }
-.about-me span {
+.about-me .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2em;
+  max-width: 70ch;
+}
+.about-me .text h3 {
+  text-align: initial;
+  padding: 2em 0;
   color: orange;
 }
-.about-me p {
-  max-width: 80ch;
+.about-me .text h3 span {
+  color: greenyellow;
+}
+.about-me .text span {
+  color: orange;
 }
 .about-me p:not(:last-child) {
   margin-bottom: 2em;
 }
+.about-me .skills {
+  width: 100%;
+}
+.about-me .list-skills {
+  display: flex;
+  gap: 2em;
+  font-size: 2em;
+}
+.about-me .skills-item {
+  border: 1px solid greenyellow;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+}
+.about-me .skills-item P {
+  color: orange;
+  font-size: 10px;
+}
+.about-me .skills-item:hover,
+.about-me .skills-item:hover p {
+  color: greenyellow;
+}
 @media (max-width: 600px) {
-  .my-informations-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-  }
   .about-me .profile {
     max-width: 50%;
     border: 1px solid greenyellow;
@@ -32,23 +71,16 @@
 }
 @media (min-width: 601px) and (max-width: 1220px) {
   .about-me {
+    display: flex;
+    align-items: center;
+    gap: 1em;
     margin-left: 1em;
     padding: 3em 1.7em;
-  }
-  .my-informations-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
   }
   .about-me .profile {
     max-width: 240px;
     border: 1px solid greenyellow;
     margin-bottom: 2em;
-  }
-  .about-me {
-    display: flex;
-    align-items: center ;
-    gap: 1em;
   }
   .about-me .text {
     display: flex;

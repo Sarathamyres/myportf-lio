@@ -1,19 +1,15 @@
-main {
+
+.home {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-.home{
-  display: none;
-}
 main .home-container {
+  height: 100%;
+  padding: 0 2em;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-main .home-container .text{
-  padding: 0 2em;
+  justify-content: center;
 }
 main .home-container .name {
   font-size: 3.5em;
@@ -41,6 +37,6 @@ main li {
 }
 @media (max-width: 500px) {
   main .home-container .name {
-  font-size: 2em;
-}
+    font-size: 2em;
+  }
 }

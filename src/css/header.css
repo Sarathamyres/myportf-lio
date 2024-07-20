@@ -1,13 +1,20 @@
 header {
-  padding: 2em 5em;
-  height: 15%;
+  height: 15hv;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: black;
+}
+header .line {
+  border-color: greenyellow;
 }
 .heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2em 5em;
 }
-.heading .menu-bars{
+.heading .menu-bars {
   display: none;
 }
 .heading .logo {
@@ -46,7 +53,7 @@ header {
 
 @media (max-width: 760px) {
   header {
-    padding: 2em; 
+    padding: 2em;
   }
   .heading .logo {
     font-size: 2em;
@@ -64,8 +71,8 @@ header {
     -moz-appearance: none;
     -ms-appearance: none;
     appearance: none;
-    background-color: transparent; 
-}
+    background-color: transparent;
+  }
   .heading .menu-bars {
     position: relative;
     display: block;
@@ -78,7 +85,7 @@ header {
   .icon-bars:hover {
     color: greenyellow;
   }
- 
+
   .navegation-bars .navegation-item {
     padding: 1em;
   }
