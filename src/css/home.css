@@ -18,10 +18,9 @@ main .home-container .introduction {
   max-width: 65ch;
   margin-top: 1em;
 }
-main .home-container .languages {
-  display: flex;
-  gap: 2em;
-  margin-top: 1em;
+main .home-container a {
+ color: orange;
+ padding-top: 1em;
 }
 main img {
   max-width: 20%;

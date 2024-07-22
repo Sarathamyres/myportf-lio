@@ -1,9 +1,9 @@
 header {
+  background: var(--gradient-background);
   height: 15hv;
   position: sticky;
   top: 0;
   z-index: 1;
-  background: black;
 }
 header .line {
   border-color: greenyellow;

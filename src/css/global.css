@@ -1,10 +1,6 @@
-/*:root{
-  --gradient-background:linear-gradient(
-    100deg,
-    rgba(00, 0, 00, 1) 6%,
-    rgba(34, 37, 42, 1) 100%
-  )
-}*/
+:root{
+  --gradient-background: #0e1229
+}
 
 * {
   text-decoration: none;
@@ -19,7 +15,7 @@ a {
   font-family: inherit;
 }
 body {
-  background: black;
+  background: var(--gradient-background);
   font-family: "Fira Code", "Consolas", "Menlo", "Monaco", monospace;
   color: aliceblue;
 }
