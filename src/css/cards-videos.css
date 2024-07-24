@@ -1,0 +1,74 @@
+.card-desciption {
+  background:rgb(27, 5, 46);
+  width: 80%;
+  height: 60%;
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1em;
+  position: relative;
+}
+.card-container .right h2{
+  color: greenyellow;
+}
+.icone-hide {
+  margin-top: 20px;
+}
+.icone-hide:hover{
+  color: greenyellow;
+}
+.card-container .right {
+  max-width: 60ch;
+}
+.card-container .icone-hide{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.card-container .right{
+  display: flex;
+  height: 300px;
+  padding-left: 1em;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-container .right p,
+.right ul li,
+.right h2 {
+  color: aliceblue;
+}
+.card-desciption .buttons {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em 0;
+}
+.card-desciption .buttons a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+  background: greenyellow;
+  padding: 0.5em;
+}
+.card-desciption .buttons a:hover {
+  background: transparent;
+  color:greenyellow;
+}

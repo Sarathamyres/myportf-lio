@@ -1,7 +1,6 @@
 :root{
-  --gradient-background: #0e1229
+  --gradient-background: rgb(13, 64, 78);
 }
-
 * {
   text-decoration: none;
   list-style: none;
@@ -14,8 +13,18 @@ a {
   font-size: inherit;
   font-family: inherit;
 }
+h2, h3 {
+  color: rgb(121, 17, 207);
+}
+h3 span{
+  color: greenyellow;
+}
+p span{
+  color: rgb(121, 17, 207);
+}
 body {
-  background: var(--gradient-background);
+  background:rgb(1, 0, 3) 10%;
+
   font-family: "Fira Code", "Consolas", "Menlo", "Monaco", monospace;
   color: aliceblue;
 }
@@ -36,9 +45,3 @@ section {
   justify-content: center;
 }
 
-.hidden{
-  display: none;
-}
-.show{
-  display: block;
-}

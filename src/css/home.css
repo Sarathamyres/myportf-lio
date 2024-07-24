@@ -19,20 +19,21 @@ main .home-container .introduction {
   margin-top: 1em;
 }
 main .home-container a {
- color: orange;
+ color:  greenyellow;
  padding-top: 1em;
+}
+main .home-container a:hover{
+  color:rgb(121, 17, 207);
 }
 main img {
   max-width: 20%;
 }
-h2 {
-  color: orange;
-}
 p {
-  color: greenyellow;
+  color:white;
 }
 main li {
-  color: orange;
+  color: rgb(121, 17, 207);
+
 }
 @media (max-width: 500px) {
   main .home-container .name {

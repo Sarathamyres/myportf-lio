@@ -17,20 +17,13 @@
 }
 .contacts .line {
   width: 100%;
-  border: 1px solid orange;
+  border: 1px solid rgb(121, 17, 207);
   position: absolute;
   bottom: 0;
   margin-bottom: 5em;
 }
-.contacts-container p span, .contacts-container .text h3 span {
-  color: orange;
-}
 .contacts-container .text p {
-  color: orange;
   padding: 1em 0;
-}
-.contacts-container p span, .contacts-container .text h3{
-  color: greenyellow;
 }
 .contacts-container .text .contacts-list {
   display: flex;
@@ -39,11 +32,11 @@
   padding: 2em 0;
 }
 .contacts-container .list-item {
-  border: 1px solid greenyellow;
+  background:  rgb(20, 19, 20);
   padding: 10px;
 }
 .contacts-container .list-item:hover{
-  color: greenyellow;
+  border: 1px solid greenyellow;
 }
 .address{
   position: absolute;
@@ -55,9 +48,14 @@
   align-items: center;
   gap: 5px;
 }
-.address i{
-  color: orange;
+.address p:hover{
+  color: rgb(121, 17, 207);;
 }
-.address:hover i{
-color: greenyellow;
+.address i{
+  color:greenyellow;
+}
+.address a:hover i , .address a:hover p{
+ color: rgb(121, 17, 207);;
+
+
 }
