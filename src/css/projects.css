@@ -1,10 +1,9 @@
-
 .projects {
   width: 100%;
   height: auto;
   padding: 1em 0;
 }
-.projects h3{
+.projects h3 {
   padding: 2em 0;
   text-align: center;
 }
@@ -26,16 +25,21 @@
   justify-content: end;
   position: relative;
   opacity: 0.5;
-  background:rgb(121, 17, 207);
+  background: rgb(121, 17, 207);
 }
-.projects-container .project-item:hover{
+.projects-container .project-item:hover {
   background: greenyellow;
   opacity: 1;
 }
 .projects-container .project-item img {
   max-width: 100%;
+  z-index: 0;
+  opacity: 0.5;
 }
-.projects-container .description{
+.projects-container .project-item img:hover {
+  opacity: 1;
+}
+.projects-container .description {
   width: 100%;
   bottom: 0;
   position: absolute;
@@ -56,7 +60,7 @@
   border: none;
   cursor: pointer;
 }
-.projects-container .description-container button:hover{
+.projects-container .description-container button:hover {
   background: greenyellow;
   color: rgb(121, 17, 207);
 }
@@ -65,17 +69,28 @@
   display: block;
   background: hsla(0, 0%, 0%, 0.8);
 }
+.projects-container .project-item .tittle-project h3 {
+  color: white;
+  padding: 0.5px;
+}
 .projects-container .project-item .tittle-project {
-  color: rgb(121, 17, 207);
+  color: white;
   text-align: center;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  gap: 3px;
   position: absolute;
   font-size: 1em;
   z-index: 1;
 }
 .projects-container .project-item:hover .tittle-project {
   display: none;
+}
+@media (max-width: 990px) {
+  .projects-container{
+    gap: 2em;
+  }
+  .projects-container .project-item {
+    margin-left: 0em;
+    }
 }

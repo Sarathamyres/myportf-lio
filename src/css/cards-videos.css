@@ -1,5 +1,5 @@
 .card-desciption {
-  background:rgb(27, 5, 46);
+  background: rgb(23, 1, 42);
   width: 80%;
   height: 60%;
   display: none;
@@ -38,6 +38,10 @@
   top: 20px;
   font-size: 1.5em;
   cursor: pointer;
+  color: greenyellow;
+}
+.card-container .icone-hide:hover{
+  color: rgb(121, 17, 207);;
 }
 .card-container .right{
   display: flex;
@@ -49,7 +53,7 @@
 .card-container .right p,
 .right ul li,
 .right h2 {
-  color: aliceblue;
+ color: gray;
 }
 .card-desciption .buttons {
   width: 100%;
@@ -62,13 +66,13 @@
 }
 .card-desciption .buttons a {
   text-decoration: none;
-  color: black;
+  color: rgb(121, 17, 207);
   text-align: center;
   border: 1px solid black;
   background: greenyellow;
   padding: 0.5em;
 }
 .card-desciption .buttons a:hover {
-  background: transparent;
-  color:greenyellow;
+  background: rgb(121, 17, 207);
+  color: greenyellow;
 }
