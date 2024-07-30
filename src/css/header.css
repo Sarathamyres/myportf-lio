@@ -1,21 +1,16 @@
 header {
   background: rgb(1, 0, 3) 10%;
-  height: 15hv;
   position: sticky;
   top: 0;
   z-index: 1;
-}
-header .line {
-  border-color: rgb(27, 5, 46);
 }
 .heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 5em;
-}
-.heading .menu-bars {
-  display: none;
+  width: 100%;
+  position: relative;
+  padding: 2em 3em;
 }
 .heading .logo {
   font-size: 3em;
@@ -24,46 +19,60 @@ header .line {
   cursor: pointer;
   border: 1px solid rgb(121, 17, 207);
 }
-.heading .logo:hover {
-  color: rgb(121, 17, 207);
-}
 .heading .navegation {
   display: flex;
-  gap: 2em;
   font-size: 2em;
+  gap: 2em;
+  color: greenyellow;
 }
-.heading .navegation-item {
+.heading .navegation span {
   color: greenyellow;
 }
 .heading .navegation-item:hover {
-  color: rgb(121, 17, 207);
+  color: greenyellow;
 }
-.heading .navegation-item span {
-  color: rgb(121, 17, 207);
+header .line {
+  border: 1px solid rgb(121, 17, 207);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.heading .menu-bars {
+  display: none;
 }
 @media (max-width: 500px) {
-  .navegation-bars {
-    width: 180px;
-    position: absolute;
-    left: -7em;
-    top: 3em;
-    border: 1px solid greenyellow;
+  .heading {
+    padding: 1em 3em;
+  }
+  .heading .navegation {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    gap: 2em;
+    color: greenyellow;
   }
 }
-
-@media (max-width: 760px) {
-  header {
-    padding: 2em;
-  }
-  .heading .logo {
-    font-size: 2em;
-    margin-left: 1em;
-  }
+@media (max-width: 900px) {
   .heading .navegation {
     display: none;
   }
+
+  .heading .menu-bars .icon-bars {
+    font-size: 3em;
+  }
+  .heading .navegation-bars {
+    position: absolute;
+    left: 0;
+    top: 5em;
+    padding: 1em 0;
+    background: rgb(1, 0, 3) 10%;
+    border-radius: 0 0 30px 30px;
+  }
   header input:checked ~ .navegation-bars {
-    display: block;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   input[type="checkbox"] {
     -webkit-appearance: none;
@@ -72,20 +81,8 @@ header .line {
     appearance: none;
     background-color: transparent;
   }
-  .heading .menu-bars {
-    position: relative;
-    display: block;
-  }
-  .icon-bars {
-    font-size: 3em;
-    color: greenyellow;
-    cursor: pointer;
-  }
-  .icon-bars:hover {
-    color: rgb(121, 17, 207);
-  }
-
   .navegation-bars .navegation-item {
-    padding: 1em;
+    flex: 1;
+    text-align: center;
   }
 }

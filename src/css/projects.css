@@ -1,10 +1,8 @@
 .projects {
   width: 100%;
   height: auto;
-  padding: 1em 0;
 }
 .projects h3 {
-  padding: 2em 0;
   text-align: center;
 }
 .projects-container {
@@ -19,9 +17,8 @@
 .projects-container .project-item {
   width: 410px;
   height: 200px;
-  margin-left: 2em;
-  margin-top: 2em;
-  display: flex;
+  margin: 2em;
+   display: flex;
   justify-content: end;
   position: relative;
   opacity: 0.5;
@@ -87,10 +84,8 @@
   display: none;
 }
 @media (max-width: 990px) {
-  .projects-container{
+  .projects-container {
     gap: 2em;
   }
-  .projects-container .project-item {
-    margin-left: 0em;
-    }
+
 }

@@ -1,5 +1,5 @@
 :root {
-  --gradient-background: rgb(13, 64, 78);
+  --body-background: rgba(1, 0, 3, 0.933) 10%;
 }
 * {
   text-decoration: none;
@@ -13,19 +13,20 @@ a {
   font-size: inherit;
   font-family: inherit;
 }
-h2,
-h3 {
-  color: rgb(121, 17, 207);
-}
-h3 span {
+h1, h2, h3{
   color: greenyellow;
 }
-p span {
-  color: rgb(121, 17, 207);
+h3{
+  padding: 2em 0;
+}
+h3 span, ul li{
+  color: rebeccapurple;
+}
+p{
+   color: gray;
 }
 body {
-  background: rgba(1, 0, 3, 0.933) 10%;
-
+  background: var(--body-background);
   font-family: "Fira Code", "Consolas", "Menlo", "Monaco", monospace;
   color: aliceblue;
 }
@@ -36,6 +37,7 @@ main {
   font-size: 1.6em;
   display: flex;
   flex-direction: column;
+  padding:  1em;
 }
 section {
   display: flex;
