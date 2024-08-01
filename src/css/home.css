@@ -16,6 +16,7 @@ main .home-container .apresentation {
 main .home-container .name {
   font-size: 35px;
   margin: 0.2em 0;
+  color: blueviolet;
 }
 main .home-container .introduction {
   font-size: 1em;

@@ -17,7 +17,7 @@ header {
   color: greenyellow;
   padding: 0.5em;
   cursor: pointer;
-  border: 1px solid rgb(121, 17, 207);
+  border: 1px solid rebeccapurpl;
 }
 .heading .navegation {
   display: flex;
@@ -40,6 +40,14 @@ header .line {
 .heading .menu-bars {
   display: none;
 }
+.heading .menu-bars .icon-bars {
+  font-size: 1.5em;
+  color: greenyellow;
+  cursor: pointer;
+}
+.heading .menu-bars .icon-bars:hover {
+  color: rgb(121, 17, 207);
+}
 @media (max-width: 500px) {
   .heading {
     padding: 1em 3em;
@@ -51,15 +59,16 @@ header .line {
     gap: 2em;
     color: greenyellow;
   }
+  .heading .navegation-bars {
+    position: absolute;
+    left: 0;
+    top: 4.5em;
+    padding: 1em 0;
+    background: rgb(1, 0, 3) 10%;
+    border-radius: 0 0 30px 30px;
+  }
 }
-@media (max-width: 900px) {
-  .heading .navegation {
-    display: none;
-  }
-
-  .heading .menu-bars .icon-bars {
-    font-size: 3em;
-  }
+@media (min-width: 501px) and (max-width: 900px) {
   .heading .navegation-bars {
     position: absolute;
     left: 0;
@@ -67,6 +76,17 @@ header .line {
     padding: 1em 0;
     background: rgb(1, 0, 3) 10%;
     border-radius: 0 0 30px 30px;
+  }
+}
+@media (max-width: 900px) {
+  .heading .menu-bars {
+    display: block;
+  }
+  .heading .navegation {
+    display: none;
+  }
+  .heading .menu-bars .icon-bars {
+    font-size: 3em;
   }
   header input:checked ~ .navegation-bars {
     display: flex;

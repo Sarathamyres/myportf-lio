@@ -13,17 +13,20 @@ a {
   font-size: inherit;
   font-family: inherit;
 }
-h1, h2, h3{
+h1,
+h2,
+h3 {
   color: greenyellow;
 }
-h3{
+h3 {
   padding: 2em 0;
 }
-h3 span, ul li{
+h3 span,
+ul li {
   color: rebeccapurple;
 }
-p{
-   color: gray;
+p {
+  color: gray;
 }
 body {
   background: var(--body-background);
@@ -37,12 +40,23 @@ main {
   font-size: 1.6em;
   display: flex;
   flex-direction: column;
-  padding:  1em;
+  padding: 1em;
 }
 section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.no-scroll {
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: greenyellow;
+  border-radius: 24px;
 }
 @media (min-width: 1200px) {
   section {
