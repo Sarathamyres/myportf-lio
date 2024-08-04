@@ -12,10 +12,10 @@ main .home-container {
 }
 main .home-container .apresentation {
   color: aliceblue;
+  margin-bottom: 0.5em;
 }
 main .home-container .name {
   font-size: 35px;
-  margin: 0.2em 0;
   color: blueviolet;
 }
 main .home-container .introduction {
