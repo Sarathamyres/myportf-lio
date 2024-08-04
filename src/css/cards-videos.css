@@ -20,19 +20,19 @@
   gap: 1em;
   position: relative;
 }
-.card-container .right h2{
+.card-container .right h2 {
   color: greenyellow;
 }
 .icone-hide {
   margin-top: 20px;
 }
-.icone-hide:hover{
+.icone-hide:hover {
   color: greenyellow;
 }
 .card-container .right {
   max-width: 50ch;
 }
-.card-container .icone-hide{
+.card-container .icone-hide {
   position: fixed;
   right: 20px;
   top: 20px;
@@ -40,10 +40,10 @@
   cursor: pointer;
   color: greenyellow;
 }
-.card-container .icone-hide:hover{
-  color: rgb(121, 17, 207);;
+.card-container .icone-hide:hover {
+  color: rgb(121, 17, 207);
 }
-.card-container .right{
+.card-container .right {
   display: flex;
   height: 300px;
   padding-left: 1em;
@@ -53,7 +53,7 @@
 .card-container .right p,
 .right ul li,
 .right h2 {
- color: gray;
+  color: gray;
 }
 .card-desciption .buttons {
   width: 100%;
@@ -76,7 +76,7 @@
   background: rgb(121, 17, 207);
   color: greenyellow;
 }
-@media(max-width:500px){
+@media (max-width: 500px) {
   .card-container {
     display: flex;
     flex-direction: column;
@@ -86,13 +86,16 @@
     gap: 1em;
     position: relative;
   }
-  video{
-    width: 400px;
-    height: 200px;
+  video {
+    width: 20em;
+    height: auto;
+  }
+  .card-container .right {
+    word-break: break-all;
+    padding: 0 1em;
   }
 }
-@media(min-width:501px)
-and  (max-width:1160px){
+@media (min-width: 501px) and (max-width: 1160px) {
   .card-container {
     display: flex;
     flex-direction: column;
@@ -102,15 +105,15 @@ and  (max-width:1160px){
     gap: 1em;
     position: relative;
   }
-  video{
-    width: 500px;
-    height: 200px;
+  video {
+    width: 30em;
+    height: auto;
   }
   .card-desciption {
     padding: 2em 0;
   }
 }
-@media(max-width:1225px){
+@media (max-width: 1225px) {
   .card-desciption {
     background: rgb(23, 1, 42);
     width: 100%;

@@ -64,7 +64,14 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    margin: 2em 0;
+    padding: 2em;
+    background: red;
+  }
+  .skills-responsive h3{
+    background: pink;
+  }
+  .skills-responsive .list-skills{
+    background: rebeccapurple;
   }
 }
 @media (max-width: 990px) {
@@ -88,7 +95,7 @@
     text-align: center;
   }
   .about-me .list-skills {
-    margin-top: 2em;
+    padding: 1em;
   }
 }
 @media (min-width: 991px) and (max-width: 1270px) {
